@@ -1288,3 +1288,34 @@ img { max-width: 100%; display: block; }
     max-width: 320px;
   }
 }
+/* ===== Mobile HERO text fix ===== */
+@media (max-width: 768px) {
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 24px 16px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero h1,
+  .hero-title {
+    font-size: 32px;        /* katta emas, premium */
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero p,
+  .hero-text {
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+}
